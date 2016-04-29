@@ -36,6 +36,12 @@ public class LoadImage extends AppCompatActivity {
                 startActivityForResult(i, RESULT_LOAD_IMAGE);
             }
         });
+        findViewById(R.id.button7).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoadImage.this, ProfilPage.class));
+            }
+        });
     }
 
 
