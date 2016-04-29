@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".LoadImage" />
         <activity android:name=".Login" />
+        <activity android:name=".ProfilPage"></activity>
     </application>
 
 </manifest>
