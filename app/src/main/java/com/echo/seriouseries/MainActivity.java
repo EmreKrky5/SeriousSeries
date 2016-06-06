@@ -1,4 +1,4 @@
-package com.example.win7.seriousseries;
+package com.echo.seriouseries;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -12,13 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, LoadImage.class));
-            }
-        });
-        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
+
+        findViewById(R.id.LoginButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Login.class));

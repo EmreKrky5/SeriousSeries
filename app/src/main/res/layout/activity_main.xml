@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.win7.seriousseries.MainActivity"
+    tools:context="com.echo.seriouseries.MainActivity"
     android:background="@drawable/yellowimagetam"
     >
 
@@ -20,19 +20,8 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="SIGN UP"
-        android:id="@+id/button"
-        android:textAlignment="center"
-        android:layout_above="@+id/button2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:theme="@style/Platform.V14.AppCompat.Light" />
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:text="LOGIN"
-        android:id="@+id/button2"
+        android:id="@+id/LoginButton"
         android:textAlignment="center"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"

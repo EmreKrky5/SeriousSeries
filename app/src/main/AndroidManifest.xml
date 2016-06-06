@@ -1,38 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.win7.seriousseries">
-
+    package="com.echo.seriouseries">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ss"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        //
-        <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-        // LOAD IMAGE PERMISSION OLMASI LAZIM FAKAT ÇALIŞMIYOR
-
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoadImage" />
         <activity android:name=".Login" />
-        <activity android:name=".ProfilPage" />
-        <activity android:name=".ForgetPassword" />
-        <activity android:name=".FavoriteSeries" />
-        <activity android:name=".Options" />
-        <activity android:name=".ChangePassword" />
-        <activity android:name=".Notifications"></activity>
-
+        <activity android:name=".SignupActivity"></activity>
     </application>
 
-
 </manifest>
-

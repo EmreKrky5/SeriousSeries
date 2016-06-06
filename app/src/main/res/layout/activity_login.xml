@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.win7.seriousseries.Login"
+    tools:context="com.echo.seriouseries.Login"
     android:background="@drawable/yellowimagetam">
 
     <LinearLayout
@@ -15,31 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout" >
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" >
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Name :"
-                android:id="@+id/textView"
-                android:layout_weight="0.35"
-                android:textColor="@android:color/black"
-                android:textAlignment="center" />
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:id="@+id/editText"
-                android:layout_weight="0.65"
-                android:backgroundTint="@android:color/black" />
-        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -109,7 +84,7 @@
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Forget Password"
+                android:text="Create Account"
                 android:id="@+id/button5"
                 android:layout_gravity="center"
                 android:theme="@style/Platform.Widget.AppCompat.Spinner" />

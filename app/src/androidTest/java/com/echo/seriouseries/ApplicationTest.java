@@ -1,4 +1,4 @@
-package com.example.win7.seriousseries;
+package com.echo.seriouseries;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.win7.seriousseries.LoadImage"
+    tools:context="com.echo.seriouseries.SignupActivity"
     android:background="@drawable/yellowimagetam">
 
     <LinearLayout
@@ -98,20 +98,19 @@
         android:layout_height="match_parent">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="LOAD IMAGE"
-            android:id="@+id/button3"
-            android:layout_gravity="center"
-            android:theme="@style/Platform.V14.AppCompat.Light" />
-
-        <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="OK"
+            android:text="Already a member ? Login."
             android:id="@+id/button7"
             android:layout_gravity="center_horizontal|bottom"
             android:theme="@style/Platform.V14.AppCompat.Light" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/button0"
+            android:layout_gravity="center" />
 
     </FrameLayout>
 
