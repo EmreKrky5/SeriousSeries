@@ -1,6 +1,7 @@
 package com.echo.seriouseries;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -90,6 +91,8 @@ public class SignupActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), (CharSequence) _nameText.getText() + " " + _emailText.getText() + " " +
                 _passwordText.getText(), Toast.LENGTH_LONG).show();
         finish();
+        Intent a = new Intent(SignupActivity.this,FavoriteSeries.class);
+        startActivity(a);
     }
 
     public void onSignupFailed() {

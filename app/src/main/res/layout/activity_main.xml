@@ -20,7 +20,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
+        android:text="Welcome to The World of Series"
         android:id="@+id/LoginButton"
         android:textAlignment="center"
         android:layout_alignParentBottom="true"

@@ -19,6 +19,8 @@ public class Login extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
 
+
+
     @Bind(R.id.editText2) EditText _emailText;
     @Bind(R.id.editText3) EditText _passwordText;
     @Bind(R.id.button4) Button _loginButton;
@@ -35,6 +37,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 login();
+
             }
         });
 
@@ -59,6 +62,7 @@ public class Login extends AppCompatActivity {
 
         _loginButton.setEnabled(false);
 
+
         final ProgressDialog progressDialog = new ProgressDialog(Login.this,
                 R.style.AppTheme_Dark_Dialog);
         progressDialog.setIndeterminate(true);
@@ -68,7 +72,9 @@ public class Login extends AppCompatActivity {
         String email = _emailText.getText().toString();
         String password = _passwordText.getText().toString();
 
+
         // TODO: Implement your own authentication logic here.
+
 
         new android.os.Handler().postDelayed(
                 new Runnable() {
@@ -79,12 +85,13 @@ public class Login extends AppCompatActivity {
                         progressDialog.dismiss();
                     }
                 }, 3000);
+
     }
 
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_SIGNUP) {
+        if (requestCode == REQUEST_SIGNUP ) {
             if (resultCode == RESULT_OK) {
 
                 // TODO: Implement successful signup logic here
@@ -105,6 +112,8 @@ public class Login extends AppCompatActivity {
     public void onLoginSuccess() {
         _loginButton.setEnabled(true);
         finish();
+        Intent a = new Intent(Login.this,FavoriteSeries.class);
+        startActivity(a);
     }
 
     public void onLoginFailed() {
@@ -126,7 +135,7 @@ public class Login extends AppCompatActivity {
             _emailText.setError(null);
         }
 
-        if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
+        if (password.isEmpty() || password.length() < 4 || password.length() > 15) {
             _passwordText.setError("between 4 and 10 alphanumeric characters");
             valid = false;
         } else {
