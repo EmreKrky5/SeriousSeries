@@ -91,8 +91,12 @@ public class SignupActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), (CharSequence) _nameText.getText() + " " + _emailText.getText() + " " +
                 _passwordText.getText(), Toast.LENGTH_LONG).show();
         finish();
-        Intent a = new Intent(SignupActivity.this,FavoriteSeries.class);
+        Intent a = new Intent(SignupActivity.this,ProfilePage.class);
         startActivity(a);
+        EditText etLocation = (EditText) findViewById(R.id.editText5);
+        Intent intent = new Intent(SignupActivity.this, ProfilePage.class);
+        intent.putExtra("location", etLocation.getText().toString());
+        startActivity(intent);
     }
 
     public void onSignupFailed() {

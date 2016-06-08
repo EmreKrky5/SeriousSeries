@@ -32,6 +32,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
+
         _loginButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -112,8 +113,12 @@ public class Login extends AppCompatActivity {
     public void onLoginSuccess() {
         _loginButton.setEnabled(true);
         finish();
-        Intent a = new Intent(Login.this,FavoriteSeries.class);
+        Intent a = new Intent(Login.this,ProfilePage.class);
         startActivity(a);
+        EditText etLocation = (EditText) findViewById(R.id.editText2);
+        Intent intent = new Intent(Login.this, ProfilePage.class);
+        intent.putExtra("location", etLocation.getText().toString());
+        startActivity(intent);
     }
 
     public void onLoginFailed() {
@@ -144,4 +149,5 @@ public class Login extends AppCompatActivity {
 
         return valid;
     }
+
 }

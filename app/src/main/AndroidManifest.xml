@@ -20,11 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Login" />
-        <activity android:name=".SignupActivity"/>
-        <activity android:name=".FavoriteSeries">
-        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".FavoriteSeries"></activity>
+        <activity android:name=".ProfilePage"></activity>
     </application>
 
 </manifest>
