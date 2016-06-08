@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SeriouSeries.iml" filepath="$PROJECT_DIR$/SeriouSeries.iml" />
       <module fileurl="file://$PROJECT_DIR$/SeriousSeries.iml" filepath="$PROJECT_DIR$/SeriousSeries.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

@@ -15,10 +15,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:layout_width="177dp"
+            android:layout_height="177dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Series"
+            android:id="@+id/series"
+            android:layout_gravity="center_horizontal|bottom" />
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="138dp"
+            android:layout_height="108dp"
             android:layout_gravity="center">
 
             <TextView
@@ -34,19 +47,6 @@
                 android:id="@+id/textView3" />
 
         </LinearLayout>
-
-        <ImageView
-            android:layout_width="249dp"
-            android:layout_height="249dp"
-            android:id="@+id/imageView"
-            android:layout_gravity="center_horizontal|top" />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Series"
-            android:id="@+id/series"
-            android:layout_gravity="center_horizontal|bottom" />
 
     </FrameLayout>
 </RelativeLayout>

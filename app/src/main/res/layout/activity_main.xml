@@ -13,7 +13,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/logo"></FrameLayout>
+        android:background="@drawable/logo"
+        android:layout_above="@+id/LoginButton"></FrameLayout>
 
     <Button
         android:layout_width="fill_parent"
