@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.echo.seriouseries.ProfilePage"
+    tools:context="com.echo.seriouseries.Serie"
     android:background="@drawable/background">
     >
 
@@ -18,35 +18,23 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="138dp"
-            android:layout_gravity="center">
+            android:layout_height="match_parent"
+            android:weightSum="1">
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/EmailText" />
+                android:id="@+id/Header"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.09" />
 
             <TextView
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="390dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/textView3" />
+                android:id="@+id/explanation" />
 
         </LinearLayout>
-
-        <ImageView
-            android:layout_width="249dp"
-            android:layout_height="249dp"
-            android:id="@+id/imageView"
-            android:layout_gravity="center_horizontal|top" />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Series"
-            android:id="@+id/series"
-            android:layout_gravity="center_horizontal|bottom" />
-
     </FrameLayout>
 </RelativeLayout>

@@ -22,8 +22,9 @@
         </activity>
         <activity android:name=".Login" />
         <activity android:name=".SignupActivity" />
-        <activity android:name=".FavoriteSeries"></activity>
-        <activity android:name=".ProfilePage"></activity>
+        <activity android:name=".FavoriteSeries" />
+        <activity android:name=".ProfilePage" />
+        <activity android:name=".Serie"></activity>
     </application>
 
 </manifest>

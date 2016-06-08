@@ -1,6 +1,8 @@
 package com.echo.seriouseries;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -76,7 +78,10 @@ public class FavoriteSeries extends AppCompatActivity {
             "Continuum"
 
     };
+
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorite_series);
         listView = (ListView) findViewById(R.id.listView);
@@ -85,10 +90,26 @@ public class FavoriteSeries extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+" is selected",Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + " is selected", Toast.LENGTH_LONG).show();
+                String text= (String) listView.getItemAtPosition(position);
+
+                Intent i=new Intent(FavoriteSeries.this ,Serie.class );
+                i.putExtra("extra",text);
+                startActivity(i);
             }
         });
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                String text= (String) listView.getItemAtPosition(position);
 
+                Intent i=new Intent(FavoriteSeries.this ,ProfilePage.class );
+                i.putExtra("profil",text);
+                startActivity(i);
+                return false;
+            }
+        });
     }
 }
+
 
