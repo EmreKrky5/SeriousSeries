@@ -23,7 +23,7 @@ public class ProfilePage extends AppCompatActivity {
 
         Intent intent = getIntent();
         String str = intent.getStringExtra("location");
-        textView1.setText(str);
+        textView1.setText("Your E_Mail Adress : "+ str);
 
         findViewById(R.id.series).setOnClickListener(new View.OnClickListener() {
             @Override
